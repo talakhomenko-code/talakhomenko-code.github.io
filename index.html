@@ -76,6 +76,8 @@
   /* featured cards */
   .featured { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
   #products .featured { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  #products .featured.brand { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); align-items: start; }
+  .brand .media img[src*="poster"] { cursor: zoom-in; }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: border-color .2s, transform .2s; }
   .card:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); transform: translateY(-4px); }
   .media { position: relative; background: #000; cursor: pointer; overflow: hidden; }
@@ -298,6 +300,9 @@
       </div>
       <div class="featured" data-list="featured"></div>
 
+      <div class="sub-head"><h3>Brand &amp; character animation</h3><p>Big Betty Partners — a retro 50s campaign for an affiliate program. The illustrated character is split into layers, rigged and animated by hand in After Effects; each animation ends on its own static key visual.</p></div>
+      <div class="featured brand" data-list="brand"></div>
+
       <div class="sub-head"><h3>AI key visuals</h3><p>Photoreal scenes generated for an app campaign — events, UGC and business settings with on-brand screens.</p></div>
       <div class="visuals" data-list="visuals"></div>
     </div>
@@ -407,6 +412,12 @@ const DATA = {
     V('01-04-ai-companion', 'AI companion — gothic hook', 'New hook for a running creative: an AI character opener, stylized captions and quiz CTA.', ['Freelance', 'Hook A/B', 'Veo']),
     V('01-05-ai-companion-face-to-face', 'AI companion — “Face to face” hook', 'Talking-head variation with punch-in edits, animated UI pills and a progress bar.', ['Freelance', 'Hook A/B', 'UI pills']),
   ],
+  brand: [
+    V('01-10-bigbetty-diner', 'Big Betty — “Betty’s Diner”', 'Betty blows a bubble: BIG → BIGGER → BIGGEST, it pops and the pieces assemble the headline, then a pulsing Join Now.', ['Freelance', 'Character rig', 'After Effects'], '4/5'),
+    V('01-11-bigbetty-auction', 'Big Betty — “Big Deal Auction”', 'Auction scene: bidding plaques rise, gavel strikes, SOLD! — a camera flash freezes it into a halftone newspaper front page.', ['Freelance', 'Character rig', 'Transitions'], '4/5'),
+    I('01-12-bigbetty-poster-diner', 'Key visual — Diner', '4/5'),
+    I('01-13-bigbetty-poster-auction', 'Key visual — The Big Deal Times', '4/5'),
+  ],
   visuals: [
     I('01-07-feenko-booth', 'Fintech app — expo booth', '16/9'),
     I('01-08-feenko-ugc', 'Fintech app — UGC selfie', '9/16'),
@@ -449,6 +460,8 @@ const DATA = {
 const CRAFT = {
   '01-01-sion-promo': 'hybrid', '01-03-ai-companion-charlie': 'hybrid', '01-06-feenko-app': 'hybrid',
   '01-04-ai-companion': 'hybrid', '01-05-ai-companion-face-to-face': 'hand',
+  '01-10-bigbetty-diner': 'hand', '01-11-bigbetty-auction': 'hand',
+  '01-12-bigbetty-poster-diner': 'hand', '01-13-bigbetty-poster-auction': 'hand',
   '01-07-feenko-booth': 'ai', '01-08-feenko-ugc': 'ai', '01-09-feenko-office': 'ai',
   '02-01-thunder-coins-xxl': 'hand', '02-02-more-energy-coins': 'hand', '02-03-coin-strike': 'hand',
   '02-04-coin-strike': 'hand', '02-05-tower-rush': 'hand', '02-06-chicken-road-2': 'hand',
