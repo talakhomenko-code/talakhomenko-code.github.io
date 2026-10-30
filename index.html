@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nataliia Khomenko — Motion Designer & AI Video Creator</title>
-<meta name="description" content="Motion designer with 3+ years in performance marketing and an MA in Fine Arts: ad creatives, app promos and AI video. After Effects, Kling, Veo, Seedance. Creatives localized for 15+ markets.">
+<meta name="description" content="Motion designer who both generates and hand-crafts: AI video with Veo, Kling, Seedance and Nano Banana, finished by hand in After Effects. 3+ years in motion, MA in Fine Arts.">
 <meta property="og:title" content="Nataliia Khomenko — Motion Designer & AI Video Creator">
 <meta property="og:description" content="Performance creatives, app promos and AI video, localized for 15+ markets.">
-<meta property="og:image" content="media/01-01-sion-promo.jpg">
+<meta property="og:image" content="media/showreel.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -113,7 +113,41 @@
   .visuals .card:first-child .media { aspect-ratio: 16/9 !important; }
   @media (max-width: 900px) { .visuals { grid-template-columns: 1fr 1fr; } .visuals .card:first-child { grid-column: 1 / -1; } .visuals .card .media { aspect-ratio: 9/16 !important; } }
 
+  /* badges */
+  .badge { display: inline-flex; align-items: center; font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; padding: 4px 10px; border-radius: 999px; white-space: nowrap; }
+  .b-ai { background: var(--accent-2); color: #fff; }
+  .b-hand { background: var(--accent); color: #0b0b10; }
+  .b-hybrid { background: linear-gradient(90deg, var(--accent-2), #6ef2c7 60%, var(--accent)); color: #0b0b10; }
+  .badge.on-media { position: absolute; left: 10px; top: 10px; z-index: 2; box-shadow: 0 4px 14px rgba(0,0,0,.35); }
+  .media .dur { display: none; }
+
+  /* generate x craft */
+  .duo { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .pillar { position: relative; border-radius: var(--radius); padding: 28px; border: 1px solid var(--line); background: var(--surface); overflow: hidden; }
+  .pillar::before { content: ""; position: absolute; inset: -40% -30% auto auto; width: 320px; height: 320px; border-radius: 50%; opacity: .22; filter: blur(30px); pointer-events: none; }
+  .pillar-ai::before { background: var(--accent-2); }
+  .pillar-hand::before { background: var(--accent); }
+  .pillar h3 { font-size: 24px; margin: 16px 0 14px; }
+  .pillar ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .pillar li { color: #cfcfe0; font-size: 15px; padding-left: 22px; position: relative; }
+  .pillar li::before { content: "→"; position: absolute; left: 0; color: var(--muted); }
+  .legend { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; margin-top: 20px; color: var(--muted); font-size: 13px; }
+  .legend .badge { margin-left: 8px; }
+  .legend .badge:first-child { margin-left: 0; }
+  @media (max-width: 760px) { .duo { grid-template-columns: 1fr; } }
+
+  /* ai stack */
+  .stack { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-bottom: 20px; }
+  .stack-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 16px 20px; border-top: 1px solid var(--line); background: var(--surface); }
+  .stack-row:first-child { border-top: 0; }
+  .stack-row b { font-family: Unbounded, sans-serif; font-weight: 500; font-size: 15px; min-width: 190px; }
+  .stack-row .m { font-size: 13px; padding: 4px 12px; border-radius: 999px; border: 1px solid color-mix(in srgb, var(--accent-2) 60%, var(--line)); background: color-mix(in srgb, var(--accent-2) 14%, transparent); }
+  .stack-row em { font-style: normal; color: var(--muted); font-size: 13px; margin-left: auto; }
+  @media (max-width: 700px) { .stack-row b { min-width: 100%; } .stack-row em { margin-left: 0; width: 100%; } }
+
   /* about */
+  .strengths { display: flex; flex-wrap: wrap; gap: 8px; margin: -4px 0 18px; }
+  .strengths span { font-size: 13px; font-weight: 600; padding: 6px 14px; border-radius: 999px; background: color-mix(in srgb, var(--accent) 14%, transparent); border: 1px solid color-mix(in srgb, var(--accent) 45%, var(--line)); color: var(--accent); }
   .about { display: grid; grid-template-columns: .8fr 1.15fr .85fr; gap: 40px; align-items: start; }
   .about-photo { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 4 / 5; box-shadow: 0 30px 80px -40px color-mix(in srgb, var(--accent-2) 60%, transparent); }
   .about-photo img { width: 100%; height: 100%; object-fit: cover; }
@@ -183,11 +217,11 @@
   <div class="wrap">
     <a class="logo" href="#top">Nataliia Khomenko<span>.</span></a>
     <div class="nav-links">
+      <a href="#craft">AI × Craft</a>
       <a href="#products">Products</a>
       <a href="#igaming">iGaming</a>
+      <a href="#skills">AI stack</a>
       <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
     </div>
     <a class="btn btn-primary" href="mailto:tala.khomenko.s@gmail.com">Hire me</a>
   </div>
@@ -198,17 +232,17 @@
     <div class="hero-grid">
       <div>
         <span class="eyebrow"><i></i>Open to full-time &amp; freelance · Remote</span>
-        <h1>Motion designer for <em>ads that perform</em></h1>
-        <p class="lead">I make <b>performance video creatives, app promos and AI-driven video</b> — from hook to end card. 3+ years in motion, creatives localized for 15+ markets, and a fine-art eye for composition, form and color.</p>
+        <h1>AI&#8209;generated.<br><em>Hand&#8209;crafted.</em></h1>
+        <p class="lead">Motion designer who does both. I <b>generate</b> footage, presenters, key visuals and voice with today's top AI models — and <b>build the rest by hand</b> in After Effects: UI animation, FX, kinetic type and compositing. 3+ years in motion and a fine-art eye for composition, form and color.</p>
         <div class="cta">
           <a class="btn btn-primary" href="mailto:tala.khomenko.s@gmail.com">Email me</a>
           <a class="btn btn-ghost" href="https://t.me/Tala10000100101" target="_blank" rel="noopener">Telegram</a>
           <a class="btn btn-ghost" href="https://www.linkedin.com/in/natalia-khomenko-875616333/" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
-      <div class="hero-reel" data-video="media/01-01-sion-promo.mp4" data-poster="media/01-01-sion-promo.jpg">
-        <video src="media/01-01-sion-promo.mp4" poster="media/01-01-sion-promo.jpg" muted loop playsinline autoplay preload="metadata"></video>
-        <span class="tag">▶ Tap for sound</span>
+      <div class="hero-reel">
+        <video src="media/showreel.mp4" poster="media/showreel.jpg" muted loop playsinline autoplay preload="metadata"></video>
+        <span class="tag">▶ Showreel 2026 · tap to expand</span>
       </div>
     </div>
 
@@ -222,10 +256,44 @@
 </header>
 
 <main>
+  <section id="craft">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="num">01</span><h2>Generate × Craft</h2></div>
+        <p>Two skill sets in one workflow: AI where it saves days, hand-made motion where it needs precision. Every work below is badged so you can see which is which.</p>
+      </div>
+      <div class="duo">
+        <div class="pillar pillar-ai">
+          <span class="badge b-ai">AI</span>
+          <h3>I generate</h3>
+          <ul>
+            <li>Text- and image-to-video scenes with consistent characters across shots</li>
+            <li>AI presenters, UGC-style avatars and lip-synced talking heads</li>
+            <li>Photoreal key visuals and product scenes with on-brand screens</li>
+            <li>Voice cloning and AI dubbing to localize one creative into many languages</li>
+            <li>Upscaling, relighting and retouching generated frames</li>
+          </ul>
+        </div>
+        <div class="pillar pillar-hand">
+          <span class="badge b-hand">Hand-crafted</span>
+          <h3>I build by hand</h3>
+          <ul>
+            <li>Keyframe animation with clean easing and timing in After Effects</li>
+            <li>App and game UI animated from scratch — screens, buttons, counters</li>
+            <li>FX: particles, glow, lightning, coin showers, win sequences</li>
+            <li>Kinetic typography, captions, transitions and compositing</li>
+            <li>Static banner sets in Photoshop and Illustrator</li>
+          </ul>
+        </div>
+      </div>
+      <div class="legend"><span class="badge b-ai">AI</span> generated <span class="badge b-hand">Hand-crafted</span> made in AE / PS <span class="badge b-hybrid">AI + Hand</span> generated footage, finished by hand</div>
+    </div>
+  </section>
+
   <section id="products">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="num">01</span><h2>Products &amp; apps</h2></div>
+        <div><span class="num">02</span><h2>Products &amp; apps</h2></div>
         <p>Freelance and in-house product work: app-install ads and brand promos where motion, AI footage and UI animation work together.</p>
       </div>
       <div class="featured" data-list="featured"></div>
@@ -238,7 +306,7 @@
   <section id="igaming" class="igaming">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="num">02</span><h2>iGaming</h2></div>
+        <div><span class="num">03</span><h2>iGaming</h2></div>
         <p>Performance creatives for user acquisition: videos and banner sets localized for 15+ markets.</p>
       </div>
 
@@ -255,15 +323,42 @@
     </div>
   </section>
 
+  <section id="skills">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="num">04</span><h2>AI stack &amp; tools</h2></div>
+        <p>The platforms and models I work with in production — and the classic tools I finish everything in.</p>
+      </div>
+      <div class="stack">
+        <div class="stack-row"><b>Google Flow</b><span class="m">Veo 3.1</span><span class="m">Nano Banana 2.1</span><em>video, image edit, AI presenters</em></div>
+        <div class="stack-row"><b>Kling</b><span class="m">Kling video</span><em>image-to-video, character scenes</em></div>
+        <div class="stack-row"><b>Freepik / Magnific</b><span class="m">Seedance</span><span class="m">Magnific upscaler &amp; relight</span><em>cinematic shots, upscaling, retouch</em></div>
+        <div class="stack-row"><b>PixVerse</b><span class="m">PixVerse V5 Lip Sync</span><em>talking heads, dubbing</em></div>
+        <div class="stack-row"><b>ElevenLabs</b><span class="m">Voice cloning</span><span class="m">Multilingual TTS</span><em>voice-over and localization</em></div>
+        <div class="stack-row"><b>Runway · Midjourney</b><span class="m">Video &amp; image generation</span><em>concepts and look development</em></div>
+      </div>
+      <div class="skills">
+        <div class="skill"><h3>Motion &amp; edit</h3><ul><li>After Effects</li><li>Premiere Pro</li><li>Media Encoder</li><li>Deep Glow</li><li>FX Console</li><li>Animation Composer</li></ul></div>
+        <div class="skill"><h3>Design</h3><ul><li>Photoshop</li><li>Illustrator</li><li>Figma</li><li>UI &amp; phone mockups</li><li>Kinetic captions</li></ul></div>
+        <div class="skill"><h3>Fine art</h3><ul><li>Composition</li><li>Color</li><li>Light &amp; form</li><li>Sculpture</li><li>Painting</li></ul></div>
+      </div>
+      <div class="markets"><b>Localized for</b>
+        <span>UK</span><span>DE</span><span>CH</span><span>FR</span><span>NL</span><span>IT</span><span>ES</span><span>PT</span><span>PL</span><span>GR</span><span>TR</span><span>NO</span><span>IN</span><span>Arabic</span><span>AU</span><span>MY</span>
+      </div>
+    </div>
+  </section>
+
   <section id="about">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="num">03</span><h2>About</h2></div>
+        <div><span class="num">05</span><h2>About</h2></div>
       </div>
       <div class="about">
         <figure class="about-photo"><img src="media/portrait.jpg" alt="Nataliia Khomenko" width="768" height="960" loading="lazy"></figure>
         <div class="about-text">
           <p class="big">Artist first, motion designer second.</p>
+          <div class="strengths"><span>Creativity</span><span>Meticulous attention to detail</span><span>Composition &amp; color</span></div>
+          <p>My strengths are creativity and a meticulous eye for detail — both come straight from fine-art training. Sculpture teaches you to check a form from every angle; painting teaches you that one wrong tone breaks the whole picture. I bring the same care to every frame, keyframe and pixel.</p>
           <p>Before After Effects there were more than ten years of sculpture and painting. I hold a Master's degree in Fine Arts from Borys Grinchenko Kyiv University (2018) — that training is why my frames are built on composition, form, light and color, not just effects. From 2019 to 2024 I also taught core disciplines to art and design students, so giving clear feedback and explaining visual decisions comes naturally.</p>
           <p>For the last 3+ years I've been turning that eye into performance video: in-house creatives for user acquisition and employer branding, and freelance work for consumer apps and fintech products.</p>
         </div>
@@ -275,38 +370,6 @@
           <li><b>10+ years</b><span>Fine artist — sculpture &amp; painting</span></li>
           <li><b>2018</b><span>MA in Fine Arts</span><em>Borys Grinchenko Kyiv University</em></li>
         </ol>
-      </div>
-    </div>
-  </section>
-
-  <section id="skills">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><span class="num">04</span><h2>Tools &amp; skills</h2></div>
-        <p>A production workflow that mixes classic motion design with generative AI.</p>
-      </div>
-      <div class="skills">
-        <div class="skill"><h3>Motion &amp; edit</h3><ul><li>After Effects</li><li>Premiere Pro</li><li>Media Encoder</li><li>Deep Glow</li><li>FX Console</li><li>Animation Composer</li></ul></div>
-        <div class="skill"><h3>AI video</h3><ul><li>Kling</li><li>Veo 3.1</li><li>Seedance</li><li>PixVerse</li><li>Runway</li><li>Lip-sync</li></ul></div>
-        <div class="skill"><h3>AI image &amp; voice</h3><ul><li>Nano Banana</li><li>Magnific</li><li>Freepik</li><li>Midjourney</li><li>ElevenLabs</li><li>Voice cloning</li></ul></div>
-        <div class="skill"><h3>Design</h3><ul><li>Photoshop</li><li>Illustrator</li><li>Figma</li><li>UI &amp; phone mockups</li><li>Kinetic captions</li></ul></div>
-      </div>
-      <div class="markets"><b>Localized for</b>
-        <span>UK</span><span>DE</span><span>CH</span><span>FR</span><span>NL</span><span>IT</span><span>ES</span><span>PT</span><span>PL</span><span>GR</span><span>TR</span><span>NO</span><span>IN</span><span>Arabic</span><span>AU</span><span>MY</span>
-      </div>
-    </div>
-  </section>
-
-  <section>
-    <div class="wrap">
-      <div class="sec-head">
-        <div><span class="num">05</span><h2>How I work</h2></div>
-      </div>
-      <div class="process">
-        <div class="step"><h3>Hook first</h3><p>The first 3 seconds decide everything — I build several openers per creative for testing.</p></div>
-        <div class="step"><h3>Generate &amp; compose</h3><p>AI footage and avatars where they save time, motion design where it needs precision.</p></div>
-        <div class="step"><h3>Localize</h3><p>Captions, voice and lip-sync adapted per market without rebuilding the project.</p></div>
-        <div class="step"><h3>Iterate fast</h3><p>Variations and fixes from performance feedback, delivered in every needed format.</p></div>
       </div>
     </div>
   </section>
@@ -378,6 +441,20 @@ const DATA = {
   ],
 };
 
+// how each work was made: ai = generated, hand = built in AE / PS, hybrid = generated footage finished by hand
+const CRAFT = {
+  '01-01-sion-promo': 'hybrid', '01-03-ai-companion-charlie': 'hybrid', '01-06-feenko-app': 'hybrid',
+  '01-04-ai-companion': 'hybrid', '01-05-ai-companion-face-to-face': 'hand',
+  '01-07-feenko-booth': 'ai', '01-08-feenko-ugc': 'ai', '01-09-feenko-office': 'ai',
+  '02-01-thunder-coins-xxl': 'hand', '02-02-more-energy-coins': 'hand', '02-03-coin-strike': 'hand',
+  '02-04-coin-strike': 'hand', '02-05-tower-rush': 'hand', '02-06-chicken-road-2': 'hand',
+  '02-07-sweet-bonanza-1x1': 'hand', '02-08-brick-house-bonanza': 'hybrid',
+  '02-09-chicken-road-gameplay-4x5': 'hand', '02-10-chicken-road-gameplay-9x16': 'hand',
+  '03-01-ai-avatar-ugc-au': 'ai', '03-02-forest-arrow-ai-lipsync-es': 'ai',
+};
+const BADGE = { ai: ['b-ai', 'AI'], hand: ['b-hand', 'Hand-crafted'], hybrid: ['b-hybrid', 'AI + Hand'] };
+const badge = f => CRAFT[f] ? `<span class="badge on-media ${BADGE[CRAFT[f]][0]}">${BADGE[CRAFT[f]][1]}</span>` : '';
+
 const lb = document.getElementById('lb'), lbBody = document.getElementById('lb-body');
 function openLB(html) { lbBody.innerHTML = html; lb.classList.add('open'); document.body.style.overflow = 'hidden'; document.querySelectorAll('video').forEach(v => { if (!lb.contains(v)) v.pause(); }); }
 function closeLB() { lb.classList.remove('open'); lbBody.innerHTML = ''; document.body.style.overflow = ''; heroVideo.play().catch(() => {}); }
@@ -389,7 +466,7 @@ const canHover = matchMedia('(hover: hover)').matches;
 function card(item) {
   const el = document.createElement('article');
   el.className = 'card';
-  const media = `<div class="media" style="aspect-ratio:${item.ratio}"><img src="media/${item.file}.jpg" alt="${item.title}" loading="lazy">${item.type === 'video' ? '<span class="play"></span>' : ''}</div>`;
+  const media = `<div class="media" style="aspect-ratio:${item.ratio}"><img src="media/${item.file}.jpg" alt="${item.title}" loading="lazy">${badge(item.file)}${item.type === 'video' ? '<span class="play"></span>' : ''}</div>`;
   const body = item.desc || item.tags ? `<div class="card-body"><h3>${item.title}</h3>${item.desc ? `<p>${item.desc}</p>` : ''}${item.tags ? `<div class="tags">${item.tags.map(t => `<span>${t}</span>`).join('')}</div>` : ''}</div>` : '';
   el.innerHTML = media + body;
   const m = el.querySelector('.media');
@@ -411,7 +488,7 @@ function card(item) {
 document.querySelectorAll('[data-list]').forEach(box => DATA[box.dataset.list].forEach(it => box.appendChild(card(it))));
 
 const hero = document.querySelector('.hero-reel'), heroVideo = hero.querySelector('video');
-hero.addEventListener('click', () => { heroVideo.pause(); playVideo('01-01-sion-promo'); });
+hero.addEventListener('click', () => { heroVideo.pause(); playVideo('showreel'); });
 </script>
 </body>
 </html>
