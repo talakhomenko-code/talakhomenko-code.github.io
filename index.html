@@ -114,7 +114,10 @@
   @media (max-width: 900px) { .visuals { grid-template-columns: 1fr 1fr; } .visuals .card:first-child { grid-column: 1 / -1; } .visuals .card .media { aspect-ratio: 9/16 !important; } }
 
   /* about */
-  .about { display: grid; grid-template-columns: 1.1fr .9fr; gap: 56px; align-items: start; }
+  .about { display: grid; grid-template-columns: .8fr 1.15fr .85fr; gap: 40px; align-items: start; }
+  .about-photo { border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); aspect-ratio: 4 / 5; box-shadow: 0 30px 80px -40px color-mix(in srgb, var(--accent-2) 60%, transparent); }
+  .about-photo img { width: 100%; height: 100%; object-fit: cover; }
+  @media (max-width: 1100px) { .about { grid-template-columns: .8fr 1.2fr; } .timeline { grid-column: 1 / -1; } }
   .about-text p { color: var(--muted); font-size: 17px; margin-bottom: 18px; max-width: 580px; }
   .about-text p.big { font-family: Unbounded, sans-serif; font-size: clamp(22px, 2.6vw, 30px); line-height: 1.25; color: var(--text); }
   .timeline { list-style: none; border-left: 1px solid var(--line); padding-left: 24px; display: flex; flex-direction: column; gap: 22px; }
@@ -123,7 +126,7 @@
   .timeline b { font-family: Unbounded, sans-serif; font-size: 13px; color: var(--accent); font-weight: 500; }
   .timeline span { font-weight: 600; }
   .timeline em { font-style: normal; color: var(--muted); font-size: 14px; }
-  @media (max-width: 900px) { .about { grid-template-columns: 1fr; gap: 36px; } }
+  @media (max-width: 700px) { .about { grid-template-columns: 1fr; gap: 32px; } .about-photo { max-width: 360px; } }
 
   /* skills */
   .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
@@ -258,6 +261,7 @@
         <div><span class="num">03</span><h2>About</h2></div>
       </div>
       <div class="about">
+        <figure class="about-photo"><img src="media/portrait.jpg" alt="Nataliia Khomenko" width="768" height="960" loading="lazy"></figure>
         <div class="about-text">
           <p class="big">Artist first, motion designer second.</p>
           <p>Before After Effects there were more than ten years of sculpture and painting. I hold a Master's degree in Fine Arts from Borys Grinchenko Kyiv University (2018) — that training is why my frames are built on composition, form, light and color, not just effects. From 2019 to 2024 I also taught core disciplines to art and design students, so giving clear feedback and explaining visual decisions comes naturally.</p>
