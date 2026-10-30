@@ -1,0 +1,276 @@
+[
+ {
+  "group": "01_Не гемблінг",
+  "name": "01_SION promo - Час діяти (30s).mp4",
+  "video": "01-01-sion-promo.mp4",
+  "poster": "01-01-sion-promo.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 30,
+  "mb": 5.0
+ },
+ {
+  "group": "01_Не гемблінг",
+  "name": "02_SION promo - коротка версія (22s).mp4",
+  "video": "01-02-sion-promo.mp4",
+  "poster": "01-02-sion-promo.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 22,
+  "mb": 3.8
+ },
+ {
+  "group": "01_Не гемблінг",
+  "name": "03_AI companion Charlie - креатив (46s).mp4",
+  "video": "01-03-ai-companion-charlie.mp4",
+  "poster": "01-03-ai-companion-charlie.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 46,
+  "mb": 4.7
+ },
+ {
+  "group": "01_Не гемблінг",
+  "name": "04_AI companion - хук вампір (17s).mp4",
+  "video": "01-04-ai-companion.mp4",
+  "poster": "01-04-ai-companion.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 17,
+  "mb": 1.5
+ },
+ {
+  "group": "01_Не гемблінг",
+  "name": "05_AI companion - хук face to face (23s).mp4",
+  "video": "01-05-ai-companion-face-to-face.mp4",
+  "poster": "01-05-ai-companion-face-to-face.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 23,
+  "mb": 2.1
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "01_Thunder Coins XXL (24s).mp4",
+  "video": "02-01-thunder-coins-xxl.mp4",
+  "poster": "02-01-thunder-coins-xxl.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 24,
+  "mb": 6.8
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "02_More Energy Coins (20s).mp4",
+  "video": "02-02-more-energy-coins.mp4",
+  "poster": "02-02-more-energy-coins.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 20,
+  "mb": 3.5
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "03_Coin Strike - таймер (31s).mp4",
+  "video": "02-03-coin-strike.mp4",
+  "poster": "02-03-coin-strike.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 31,
+  "mb": 8.6
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "04_Coin Strike - бейджі (30s).mp4",
+  "video": "02-04-coin-strike.mp4",
+  "poster": "02-04-coin-strike.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 30,
+  "mb": 11.1
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "05_Tower Rush (27s).mp4",
+  "video": "02-05-tower-rush.mp4",
+  "poster": "02-05-tower-rush.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 27,
+  "mb": 2.5
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "06_Chicken Road 2 - колесо (26s).mp4",
+  "video": "02-06-chicken-road-2.mp4",
+  "poster": "02-06-chicken-road-2.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 26,
+  "mb": 3.6
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "07_Sweet Bonanza 1x1 (24s).mp4",
+  "video": "02-07-sweet-bonanza-1x1.mp4",
+  "poster": "02-07-sweet-bonanza-1x1.jpg",
+  "w": 1080,
+  "h": 1080,
+  "dur": 24,
+  "mb": 4.3
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "08_Brick House Bonanza - тестове (34s).mp4",
+  "video": "02-08-brick-house-bonanza.mp4",
+  "poster": "02-08-brick-house-bonanza.jpg",
+  "w": 1080,
+  "h": 1350,
+  "dur": 34,
+  "mb": 5.8
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "09_Chicken Road gameplay 4x5 (13s).mp4",
+  "video": "02-09-chicken-road-gameplay-4x5.mp4",
+  "poster": "02-09-chicken-road-gameplay-4x5.jpg",
+  "w": 1080,
+  "h": 1350,
+  "dur": 13,
+  "mb": 0.6
+ },
+ {
+  "group": "02_iGaming motion",
+  "name": "10_Chicken Road gameplay 9x16 (13s).mp4",
+  "video": "02-10-chicken-road-gameplay-9x16.mp4",
+  "poster": "02-10-chicken-road-gameplay-9x16.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 13,
+  "mb": 0.7
+ },
+ {
+  "group": "03_AI-аватари і локалізація",
+  "name": "01_AI avatar UGC - AU (16s).mp4",
+  "video": "03-01-ai-avatar-ugc-au.mp4",
+  "poster": "03-01-ai-avatar-ugc-au.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 16,
+  "mb": 1.5
+ },
+ {
+  "group": "03_AI-аватари і локалізація",
+  "name": "02_Forest Arrow AI lipsync - ES (47s).mp4",
+  "video": "03-02-forest-arrow-ai-lipsync-es.mp4",
+  "poster": "03-02-forest-arrow-ai-lipsync-es.jpg",
+  "w": 1080,
+  "h": 1920,
+  "dur": 46,
+  "mb": 5.6
+ },
+ {
+  "group": "04_Статика",
+  "name": "01_Big Bass UK 1.png",
+  "image": "04-01-big-bass-uk-1.jpg",
+  "w": 800,
+  "h": 800,
+  "mb": 0.2
+ },
+ {
+  "group": "04_Статика",
+  "name": "02_Big Bass UK 2.png",
+  "image": "04-02-big-bass-uk-2.jpg",
+  "w": 1080,
+  "h": 1080,
+  "mb": 0.33
+ },
+ {
+  "group": "04_Статика",
+  "name": "03_Big Bass UK 3.png",
+  "image": "04-03-big-bass-uk-3.jpg",
+  "w": 1080,
+  "h": 1080,
+  "mb": 0.42
+ },
+ {
+  "group": "04_Статика",
+  "name": "04_Fire Joker PL 1.png",
+  "image": "04-04-fire-joker-pl-1.jpg",
+  "w": 972,
+  "h": 972,
+  "mb": 0.26
+ },
+ {
+  "group": "04_Статика",
+  "name": "05_Fire Joker PL 2.png",
+  "image": "04-05-fire-joker-pl-2.jpg",
+  "w": 971,
+  "h": 972,
+  "mb": 0.26
+ },
+ {
+  "group": "04_Статика",
+  "name": "06_Joker Stoker PL 1x1.png",
+  "image": "04-06-joker-stoker-pl-1x1.jpg",
+  "w": 1080,
+  "h": 1080,
+  "mb": 0.29
+ },
+ {
+  "group": "04_Статика",
+  "name": "07_Joker Stoker PL 9x16.png",
+  "image": "04-07-joker-stoker-pl-9x16.jpg",
+  "w": 1080,
+  "h": 1920,
+  "mb": 0.49
+ },
+ {
+  "group": "04_Статика",
+  "name": "08_Coin Strike DE.png",
+  "image": "04-08-coin-strike-de.jpg",
+  "w": 1024,
+  "h": 1024,
+  "mb": 0.4
+ },
+ {
+  "group": "04_Статика",
+  "name": "09_Coin Strike CH-FR.png",
+  "image": "04-09-coin-strike-ch-fr.jpg",
+  "w": 1080,
+  "h": 1080,
+  "mb": 0.45
+ },
+ {
+  "group": "04_Статика",
+  "name": "10_Coin Strike CH-DE.png",
+  "image": "04-10-coin-strike-ch-de.jpg",
+  "w": 1024,
+  "h": 1024,
+  "mb": 0.45
+ },
+ {
+  "group": "04_Статика",
+  "name": "11_Coin Strike NL.png",
+  "image": "04-11-coin-strike-nl.jpg",
+  "w": 1080,
+  "h": 1080,
+  "mb": 0.34
+ },
+ {
+  "group": "04_Статика",
+  "name": "12_Coin Strike FR.png",
+  "image": "04-12-coin-strike-fr.jpg",
+  "w": 1080,
+  "h": 1080,
+  "mb": 0.36
+ },
+ {
+  "group": "04_Статика",
+  "name": "13_Ringo Spin.png",
+  "image": "04-13-ringo-spin.jpg",
+  "w": 1080,
+  "h": 636,
+  "mb": 0.35
+ }
+]
