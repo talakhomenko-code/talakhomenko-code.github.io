@@ -138,6 +138,11 @@
   .legend .badge:first-child { margin-left: 0; }
   @media (max-width: 760px) { .duo { grid-template-columns: 1fr; } }
 
+  /* concept art */
+  .concept { position: relative; margin: 0 0 16px; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: #0e1116; }
+  .concept img { width: 100%; height: auto; cursor: zoom-in; }
+  .concept figcaption { padding: 12px 16px; font-size: 14px; color: var(--muted); background: var(--surface); }
+
   /* ai stack */
   .stack { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; margin-bottom: 20px; }
   .stack-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; padding: 16px 20px; border-top: 1px solid var(--line); background: var(--surface); }
@@ -174,12 +179,6 @@
   .markets b { color: var(--text); font-weight: 600; margin-right: 6px; }
   .markets span { padding: 4px 10px; border-radius: 8px; background: var(--surface-2); color: var(--text); font-size: 13px; font-weight: 500; }
 
-  /* process */
-  .process { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
-  .step { border-top: 2px solid var(--accent); padding-top: 18px; }
-  .step h3 { font-size: 16px; margin-bottom: 8px; }
-  .step p { color: var(--muted); font-size: 14px; }
-
   /* contact */
   .contact { text-align: center; padding: 96px 0; border-top: 1px solid var(--line); }
   .contact h2 { font-size: clamp(32px, 5vw, 60px); margin-bottom: 18px; }
@@ -199,7 +198,6 @@
     .hero-grid { grid-template-columns: 1fr; gap: 40px; }
     .hero-reel { margin: 0 auto; width: min(100%, 340px); }
     .stats { grid-template-columns: repeat(2, 1fr); }
-    .process { grid-template-columns: 1fr 1fr; }
   }
   @media (max-width: 520px) {
     .wrap { padding: 0 16px; }
@@ -207,7 +205,6 @@
     .grid { columns: 2; column-gap: 10px; }
     .grid .card { margin-bottom: 10px; }
     .grid .card-body { display: none; }
-    .process { grid-template-columns: 1fr; }
     .stat b { font-size: 24px; }
   }
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
@@ -223,6 +220,7 @@
       <a href="#products">Products</a>
       <a href="#igaming">iGaming</a>
       <a href="#skills">AI stack</a>
+      <a href="#art">Art</a>
       <a href="#about">About</a>
     </div>
     <a class="btn btn-primary" href="mailto:tala.khomenko.s@gmail.com">Hire me</a>
@@ -357,10 +355,27 @@
     </div>
   </section>
 
+  <section id="art">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="num">05</span><h2>Concept art</h2></div>
+        <p>A commercial concept painted by hand — Odin on the shore of a northern fjord. From a tonal study to color and final light.</p>
+      </div>
+      <figure class="concept">
+        <img src="media/05-18-odin-final.jpg" alt="Concept art: Odin on the shore of a northern fjord" width="1600" height="1333" loading="lazy">
+        <span class="badge on-media b-hand">Hand-crafted</span>
+      </figure>
+      <figure class="concept process-strip">
+        <img src="media/05-19-odin-process.jpg" alt="Process: tonal study, color, final light" width="2000" height="545" loading="lazy">
+        <figcaption>Process: tonal study → color → final light</figcaption>
+      </figure>
+    </div>
+  </section>
+
   <section id="about">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="num">05</span><h2>About</h2></div>
+        <div><span class="num">06</span><h2>About</h2></div>
       </div>
       <div class="about">
         <figure class="about-photo"><img src="media/portrait.jpg" alt="Nataliia Khomenko" width="768" height="960" loading="lazy"></figure>
@@ -503,6 +518,8 @@ function card(item) {
   return el;
 }
 document.querySelectorAll('[data-list]').forEach(box => DATA[box.dataset.list].forEach(it => box.appendChild(card(it))));
+
+document.querySelectorAll('.concept img').forEach(img => img.addEventListener('click', () => openLB(`<img src="${img.getAttribute('src')}" alt="${img.alt}">`)));
 
 const hero = document.querySelector('.hero-reel'), heroVideo = hero.querySelector('video');
 hero.addEventListener('click', () => { heroVideo.pause(); playVideo('showreel'); });
