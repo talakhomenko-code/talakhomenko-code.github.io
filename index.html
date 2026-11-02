@@ -78,6 +78,9 @@
   #products .featured { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
   #products .featured.brand { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); align-items: start; }
   .brand .media img[src*="poster"] { cursor: zoom-in; }
+  .grid.pstatic { columns: 3 240px; }
+  .grid.pstatic .media { cursor: zoom-in; }
+  .grid.pstatic .badge.on-media { left: auto; right: 10px; }
   .card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; transition: border-color .2s, transform .2s; }
   .card:hover { border-color: color-mix(in srgb, var(--accent) 50%, var(--line)); transform: translateY(-4px); }
   .media { position: relative; background: #000; cursor: pointer; overflow: hidden; }
@@ -301,8 +304,8 @@
       <div class="sub-head"><h3>Brand &amp; character animation</h3><p>Big Betty Partners — a retro 50s campaign for an affiliate program. The illustrated character is split into layers, rigged and animated by hand in After Effects; each animation ends on its own static key visual.</p></div>
       <div class="featured brand" data-list="brand"></div>
 
-      <div class="sub-head"><h3>Product static</h3><p>Calm, brand-led banners for the same apps — serif headlines, real app UI and warm photography instead of loud offers.</p></div>
-      <div class="featured brand" data-list="pstatic"></div>
+      <div class="sub-head"><h3>Product static</h3><p>Performance banners for the same apps in a calm, brand-led style: hooks, features and social proof across 4:5, 9:16 and 1:1 — serif headlines, real app UI and warm photography instead of loud offers.</p></div>
+      <div class="grid pstatic" data-list="pstatic"></div>
 
       <div class="sub-head"><h3>AI key visuals</h3><p>Photoreal scenes generated for an app campaign — events, UGC and business settings with on-brand screens.</p></div>
       <div class="visuals" data-list="visuals"></div>
@@ -437,8 +440,14 @@ const DATA = {
     I('01-13-bigbetty-poster-auction', 'Key visual — The Big Deal Times', '4/5'),
   ],
   pstatic: [
-    I('01-15-charlie-static-4x5', 'AI companion — “Someone to talk to”', '4/5'),
     I('01-14-feenko-static-4x5', 'Feenko — “One calm place”', '4/5'),
+    I('01-20-charlie-story-9x16', 'Charlie — conversation story', '9/16'),
+    I('01-19-feenko-proof-1x1', 'Feenko — 100K+ downloads', '1/1'),
+    I('01-15-charlie-static-4x5', 'Charlie — “Someone to talk to”', '4/5'),
+    I('01-18-feenko-features-9x16', 'Feenko — feature story', '9/16'),
+    I('01-21-charlie-quote-1x1', 'Charlie — “He remembers the little things”', '1/1'),
+    I('01-17-feenko-notify-4x5', 'Feenko — “Know before you’re charged”', '4/5'),
+    I('01-22-charlie-discover-4x5', 'Charlie — discover characters', '4/5'),
     I('01-16-feenko-static-1x1', 'Feenko — “Still paying for things you forgot?”', '1/1'),
   ],
   visuals: [
@@ -486,6 +495,8 @@ const CRAFT = {
   '01-10-bigbetty-diner': 'hand', '01-11-bigbetty-auction': 'hand',
   '01-12-bigbetty-poster-diner': 'hand', '01-13-bigbetty-poster-auction': 'hand',
   '01-14-feenko-static-4x5': 'hybrid', '01-15-charlie-static-4x5': 'hybrid', '01-16-feenko-static-1x1': 'hybrid',
+  '01-17-feenko-notify-4x5': 'hybrid', '01-18-feenko-features-9x16': 'hybrid', '01-19-feenko-proof-1x1': 'hybrid',
+  '01-20-charlie-story-9x16': 'hybrid', '01-21-charlie-quote-1x1': 'hybrid', '01-22-charlie-discover-4x5': 'hybrid',
   '01-07-feenko-booth': 'ai', '01-08-feenko-ugc': 'ai', '01-09-feenko-office': 'ai',
   '02-01-thunder-coins-xxl': 'hand', '02-02-more-energy-coins': 'hand', '02-03-coin-strike': 'hand',
   '02-04-coin-strike': 'hand', '02-05-tower-rush': 'hand', '02-06-chicken-road-2': 'hand',
