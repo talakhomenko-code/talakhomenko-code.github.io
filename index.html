@@ -6,8 +6,8 @@
 <title>Nataliia Khomenko — Motion Designer & AI Video Creator</title>
 <meta name="description" content="Motion designer who both generates and hand-crafts: AI video with Veo, Kling, Sora, Seedance, Hailuo and Nano Banana, finished by hand in After Effects. 3+ years in motion, BFA in Fine Arts and a Master's in Art Education.">
 <meta property="og:title" content="Nataliia Khomenko — Motion Designer & AI Video Creator">
-<meta property="og:description" content="Performance creatives, app promos and AI video, localized for 15+ markets.">
-<meta property="og:image" content="media/showreel.jpg">
+<meta property="og:description" content="App-install ads, product promos and AI video for consumer apps — AI-generated, hand-crafted in After Effects.">
+<meta property="og:image" content="media/01-23-friday-ai.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -76,6 +76,9 @@
   /* featured cards */
   .featured { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 20px; }
   #products .featured { grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); }
+  #products .featured:not(.brand) { grid-template-columns: repeat(3, 1fr); }
+  @media (min-width: 1000px) { #products .featured:not(.brand) { grid-template-columns: repeat(6, 1fr); gap: 16px; } #products .featured:not(.brand) .card-body { padding: 14px 14px 16px; } #products .featured:not(.brand) .card-body p { font-size: 13px; } }
+  @media (max-width: 640px) { #products .featured:not(.brand) { grid-template-columns: repeat(2, 1fr); } }
   #products .featured.brand { grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); align-items: start; }
   .brand .media img[src*="poster"] { cursor: zoom-in; }
   .grid.pstatic { columns: 3 240px; }
@@ -219,11 +222,11 @@
   <div class="wrap">
     <a class="logo" href="#top">Nataliia Khomenko<span>.</span></a>
     <div class="nav-links">
+      <a href="#products">Work</a>
       <a href="#craft">AI × Craft</a>
-      <a href="#products">Products</a>
-      <a href="#igaming">iGaming</a>
-      <a href="#skills">AI stack</a>
       <a href="#art">Art</a>
+      <a href="#igaming">In-house</a>
+      <a href="#skills">AI stack</a>
       <a href="#about">About</a>
       <a href="cv.html">CV</a>
     </div>
@@ -235,9 +238,9 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <span class="eyebrow"><i></i>Open to full-time &amp; freelance · Remote</span>
+        <span class="eyebrow"><i></i>Open to full-time · Remote · Kyiv</span>
         <h1>AI&#8209;generated.<br><em>Hand&#8209;crafted.</em></h1>
-        <p class="lead">Motion designer who does both. I <b>generate</b> footage, presenters, key visuals and voice with today's top AI models — and <b>build the rest by hand</b> in After Effects: UI animation, FX, kinetic type and compositing. 3+ years in motion and a fine-art eye for composition, form and color.</p>
+        <p class="lead">Motion designer for app &amp; product marketing. I <b>generate</b> footage, presenters, key visuals and voice with today's top AI models — and <b>build the rest by hand</b> in After Effects: UI animation, kinetic type and compositing. 3 years of performance creatives and a fine-art eye for composition, form and color.</p>
         <div class="cta">
           <a class="btn btn-primary" href="mailto:tala.khomenko.s@gmail.com">Email me</a>
           <a class="btn btn-ghost" href="https://t.me/Tala10000100101" target="_blank" rel="noopener">Telegram</a>
@@ -245,9 +248,9 @@
           <a class="btn btn-ghost" href="Nataliia_Khomenko_CV.pdf" target="_blank" rel="noopener">CV (PDF)</a>
         </div>
       </div>
-      <div class="hero-reel">
-        <video src="media/showreel.mp4" poster="media/showreel.jpg" muted loop playsinline autoplay preload="metadata"></video>
-        <span class="tag">▶ Showreel 2026 · tap to expand</span>
+      <div class="hero-reel" data-file="01-23-friday-ai">
+        <video src="media/01-23-friday-ai.mp4" poster="media/01-23-friday-ai.jpg" muted loop playsinline autoplay preload="metadata"></video>
+        <span class="tag">▶ Latest: Friday AI app ad · tap to watch</span>
       </div>
     </div>
 
@@ -261,11 +264,38 @@
 </header>
 
 <main>
+
+
+
+
+
+  <section id="products">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="num">01</span><h2>Products &amp; apps</h2></div>
+        <p>App-install ads, brand promos and statics for consumer apps — fintech, AI companions, productivity and media. AI footage, UI animation and kinetic type working as one story.</p>
+      </div>
+      <div class="featured" data-list="featured"></div>
+
+      <div class="sub-head"><h3>Brand &amp; character animation</h3><p>Big Betty Partners — a retro 50s campaign for an affiliate program. The illustrated character is split into layers, rigged and animated by hand in After Effects; each animation ends on its own static key visual.</p></div>
+      <div class="featured brand" data-list="brand"></div>
+
+      <div class="sub-head"><h3>Product static</h3><p>Performance banners for the same apps in a calm, brand-led style: hooks, features and social proof across 4:5, 9:16 and 1:1 — serif headlines, real app UI and warm photography instead of loud offers.</p></div>
+      <div class="grid pstatic" data-list="pstatic"></div>
+
+      <div class="sub-head"><h3>Subscription statics</h3><p>Game Informer print subscription — two concepts: a warm nostalgic photo scene and a retro-game “Continue?” countdown. Each in 9:16 and 4:5.</p></div>
+      <div class="grid pstatic" data-list="gistatic"></div>
+
+      <div class="sub-head"><h3>AI key visuals</h3><p>Photoreal scenes generated for an app campaign — events, UGC and business settings with on-brand screens.</p></div>
+      <div class="visuals" data-list="visuals"></div>
+    </div>
+  </section>
+
   <section id="craft">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="num">01</span><h2>Generate × Craft</h2></div>
-        <p>Two skill sets in one workflow: AI where it saves days, hand-made motion where it needs precision. Every work below is badged so you can see which is which.</p>
+        <div><span class="num">02</span><h2>Generate × Craft</h2></div>
+        <p>Two skill sets in one workflow: AI where it saves days, hand-made motion where it needs precision. Every work is badged so you can see which is which.</p>
       </div>
       <div class="duo">
         <div class="pillar pillar-ai">
@@ -295,33 +325,28 @@
     </div>
   </section>
 
-  <section id="products">
+  <section id="art">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="num">02</span><h2>Products &amp; apps</h2></div>
-        <p>Freelance and in-house product work: app-install ads and brand promos where motion, AI footage and UI animation work together.</p>
+        <div><span class="num">03</span><h2>Concept art</h2></div>
+        <p>A commercial concept painted by hand — Odin on the shore of a northern fjord. From a tonal study to color and final light.</p>
       </div>
-      <div class="featured" data-list="featured"></div>
-
-      <div class="sub-head"><h3>Brand &amp; character animation</h3><p>Big Betty Partners — a retro 50s campaign for an affiliate program. The illustrated character is split into layers, rigged and animated by hand in After Effects; each animation ends on its own static key visual.</p></div>
-      <div class="featured brand" data-list="brand"></div>
-
-      <div class="sub-head"><h3>Product static</h3><p>Performance banners for the same apps in a calm, brand-led style: hooks, features and social proof across 4:5, 9:16 and 1:1 — serif headlines, real app UI and warm photography instead of loud offers.</p></div>
-      <div class="grid pstatic" data-list="pstatic"></div>
-
-      <div class="sub-head"><h3>Subscription statics</h3><p>Game Informer print subscription — two concepts: a warm nostalgic photo scene and a retro-game “Continue?” countdown. Each in 9:16 and 4:5.</p></div>
-      <div class="grid pstatic" data-list="gistatic"></div>
-
-      <div class="sub-head"><h3>AI key visuals</h3><p>Photoreal scenes generated for an app campaign — events, UGC and business settings with on-brand screens.</p></div>
-      <div class="visuals" data-list="visuals"></div>
+      <figure class="concept">
+        <img src="media/05-18-odin-final.jpg" alt="Concept art: Odin on the shore of a northern fjord" width="1600" height="1333" loading="lazy">
+        <span class="badge on-media b-hand">Hand-crafted</span>
+      </figure>
+      <figure class="concept process-strip">
+        <img src="media/05-19-odin-process.jpg" alt="Process: tonal study, color, final light" width="2000" height="545" loading="lazy">
+        <figcaption>Process: tonal study → color → final light</figcaption>
+      </figure>
     </div>
   </section>
 
   <section id="igaming" class="igaming">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="num">03</span><h2>iGaming</h2></div>
-        <p>Performance creatives for user acquisition: videos and banner sets localized for 15+ markets.</p>
+        <div><span class="num">04</span><h2>In-house: iGaming UA</h2></div>
+        <p>2025 – 2026 · Phoraon, Sion. Where I learned performance at scale: high-volume video and banner sets for user acquisition, hook variations for A/B tests and localization for 15+ markets with AI voice and lip-sync.</p>
       </div>
 
       <div class="sub-head"><h3>Motion creatives</h3><p>Hooks, game UI animation, win sequences and end cards.</p></div>
@@ -330,7 +355,7 @@
       <div class="sub-head"><h3>AI avatars &amp; localization</h3><p>One creative, many markets: AI talking heads, voice cloning and lip-synced dubbing instead of reshoots.</p></div>
       <div class="featured" data-list="ai"></div>
 
-      <div class="sub-head"><h3>Static banners</h3><p>Banner sets adapted per country and language — DE, CH, FR, NL, UK, PL.</p></div>
+      <div class="sub-head"><h3>Static banners</h3><p>Banner sets adapted per country and language — DE, NL, UK, PL.</p></div>
       <div class="grid static" data-list="static"></div>
 
       <p class="note">18+. iGaming creatives are shown for portfolio purposes only.</p>
@@ -340,7 +365,7 @@
   <section id="skills">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="num">04</span><h2>AI stack &amp; tools</h2></div>
+        <div><span class="num">05</span><h2>AI stack &amp; tools</h2></div>
         <p>The platforms and models I work with in production — and the classic tools I finish everything in.</p>
       </div>
       <div class="stack">
@@ -366,23 +391,6 @@
     </div>
   </section>
 
-  <section id="art">
-    <div class="wrap">
-      <div class="sec-head">
-        <div><span class="num">05</span><h2>Concept art</h2></div>
-        <p>A commercial concept painted by hand — Odin on the shore of a northern fjord. From a tonal study to color and final light.</p>
-      </div>
-      <figure class="concept">
-        <img src="media/05-18-odin-final.jpg" alt="Concept art: Odin on the shore of a northern fjord" width="1600" height="1333" loading="lazy">
-        <span class="badge on-media b-hand">Hand-crafted</span>
-      </figure>
-      <figure class="concept process-strip">
-        <img src="media/05-19-odin-process.jpg" alt="Process: tonal study, color, final light" width="2000" height="545" loading="lazy">
-        <figcaption>Process: tonal study → color → final light</figcaption>
-      </figure>
-    </div>
-  </section>
-
   <section id="about">
     <div class="wrap">
       <div class="sec-head">
@@ -395,11 +403,11 @@
           <div class="strengths"><span>Creativity</span><span>Meticulous attention to detail</span><span>Composition &amp; color</span></div>
           <p>My strengths are creativity and a meticulous eye for detail — both come straight from fine-art training. Sculpture teaches you to check a form from every angle; painting teaches you that one wrong tone breaks the whole picture. I bring the same care to every frame, keyframe and pixel.</p>
           <p>Before After Effects there were more than ten years of sculpture and painting. I hold a BFA in Fine Arts (2017) and a Master's in Art Education (2018) from Borys Grinchenko Kyiv University — that training is why my frames are built on composition, form, light and color, not just effects. From 2019 to 2024 I taught painting, composition and color at the same university and curated student exhibitions, so giving clear feedback and explaining visual decisions comes naturally.</p>
-          <p>For the last 3+ years I've been turning that eye into performance video: in-house creatives for user acquisition and employer branding, and freelance work for consumer apps and fintech products.</p>
+          <p>For the last 3 years I've been turning that eye into performance video: in-house creatives for user acquisition and employer branding at Phoraon and Sion (iGaming), and freelance work for consumer apps and fintech. Now I'm focused on product companies — apps where AI footage, UI animation and clear storytelling sell the product.</p>
         </div>
         <ol class="timeline">
-          <li><b>In-house</b><span>Motion designer — performance marketing</span><em>iGaming UA, employer brand · localization for 15+ markets</em></li>
-          <li><b>Freelance</b><span>Motion &amp; AI video for products</span><em>App-install ads for an AI companion app and a fintech subscription manager</em></li>
+          <li><b>2025 – 2026</b><span>Motion designer — Phoraon, Sion</span><em>In-house performance creatives: iGaming UA, employer brand · localization for 15+ markets</em></li>
+          <li><b>2024 – now</b><span>Freelance — motion &amp; AI video for products</span><em>App-install ads and statics for a fintech subscription manager and an AI companion app</em></li>
           <li><b>3+ years</b><span>Motion design</span><em>After Effects, Premiere Pro, generative AI video</em></li>
           <li><b>2019 – 2024</b><span>Lecturer — art &amp; design disciplines</span><em>Taught core subjects to future artists and designers</em></li>
           <li><b>10+ years</b><span>Fine artist — sculpture &amp; painting</span></li>
@@ -436,11 +444,9 @@ const DATA = {
     V('01-23-friday-ai', 'Friday AI — “Less stress. Better emails.”', 'App-install ad for an AI email assistant: a voice-to-email story in the car, animated app UI, kinetic captions and a branded end card. Delivered in 9:16 and 4:5.', ['Spec', 'AI footage', 'After Effects', 'UI animation']),
     V('01-24-claude-course-presenter', 'Claude course — AI presenter', '“Master Claude in 28 days”: an AI presenter hook flowing into a step-by-step chat UI animation that builds a weekly plan, with serif kinetic captions.', ['Spec', 'AI presenter', 'UI animation', 'Kinetic type']),
     V('01-25-claude-course-ugc', 'Claude course — UGC cut', 'UGC-style variation of the same course ad: lifestyle footage with a sliding product panel that walks through four steps, synced to voice-over.', ['Spec', 'UGC', 'UI animation', 'Edit']),
-    V('01-01-sion-promo', 'Recruitment promo — “Time to act”', 'Employer-brand promo for a performance marketing team. AI-generated scenes combined with kinetic typography, 3D phones and transitions.', ['In-house', 'After Effects', 'Seedance', 'Kling']),
     V('01-03-ai-companion-charlie', 'AI companion app — “Meet Charlie”', 'App-install ad: AI-generated presenter, animated chat UI, voice-over, captions and sound design.', ['Freelance', 'Veo 3.1', 'After Effects', 'UI animation']),
     V('01-06-feenko-app', 'Feenko — subscription manager app', 'Fintech app ad: AI presenter, picture-in-picture phone demo, animated savings callouts, kinetic captions and logo end card.', ['Freelance', 'AI presenter', 'PiP', 'Logo anim']),
-    V('01-04-ai-companion', 'AI companion — gothic hook', 'New hook for a running creative: an AI character opener, stylized captions and quiz CTA.', ['Freelance', 'Hook A/B', 'Veo']),
-    V('01-05-ai-companion-face-to-face', 'AI companion — “Face to face” hook', 'Talking-head variation with punch-in edits, animated UI pills and a progress bar.', ['Freelance', 'Hook A/B', 'UI pills']),
+    V('01-01-sion-promo', 'Recruitment promo — “Time to act”', 'Employer-brand promo in Ukrainian for Sion’s performance marketing team: AI-generated scenes, kinetic typography, 3D phones and transitions.', ['In-house · Sion', 'After Effects', 'Seedance', 'Kling']),
   ],
   brand: [
     V('01-10-bigbetty-diner', 'Big Betty — “Betty’s Diner”', 'Betty blows a bubble: BIG → BIGGER → BIGGEST, it pops and the pieces assemble the headline, then a pulsing Join Now.', ['Freelance', 'Character rig', 'After Effects'], '4/5'),
@@ -471,16 +477,11 @@ const DATA = {
     I('01-09-feenko-office', 'Feenko — advisor meeting', '9/16'),
   ],
   performance: [
+    V('showreel', 'Showreel 2026', 'A cut of in-house work: hooks, game UI, FX and win sequences.', ['Showreel']),
     V('02-01-thunder-coins-xxl', 'Thunder Coins XXL', 'Lightning FX, hold & win and total-win sequence.', ['FX', 'Slot UI']),
-    V('02-02-more-energy-coins', 'More Energy Coins', 'Coin shower and win counter build-up.', ['Particles']),
-    V('02-03-coin-strike', 'Coin Strike — timer offer', 'Countdown offer with animated bonus plates.', ['Offer']),
     V('02-04-coin-strike', 'Coin Strike — badges', 'Glowing message badges and electric end card.', ['Glow']),
     V('02-05-tower-rush', 'Tower Rush', 'Tower build-up, bonus game and payout reveal.', ['Game UI']),
-    V('02-06-chicken-road-2', 'Chicken Road 2 — wheel', 'Wheel spin, stickers and motion plates.', ['Stickers']),
-    V('02-07-sweet-bonanza-1x1', 'Sweet Bonanza', 'Square format with streamer reaction.', ['1:1'], '1/1'),
-    V('02-08-brick-house-bonanza', 'Brick House Bonanza', 'Slot promo for the Norwegian market: bonus, win sequence and payout notification.', ['Freelance', '4:5'], '4/5'),
-    V('02-09-chicken-road-gameplay-4x5', 'Chicken Road — gameplay', 'Game UI animated from scratch, 4:5.', ['UI animation'], '4/5'),
-    V('02-10-chicken-road-gameplay-9x16', 'Chicken Road — gameplay', 'Same animation adapted to 9:16.', ['UI animation']),
+    V('02-10-chicken-road-gameplay-9x16', 'Chicken Road — gameplay', 'Game UI animated from scratch.', ['UI animation']),
   ],
   ai: [
     V('03-01-ai-avatar-ugc-au', 'AI avatar UGC', 'AI-generated talking-head creator with lip-synced voice and animated app UI. Delivered for AU, MY and PL.', ['AI avatar', 'Lip-sync', 'Localization']),
@@ -488,24 +489,17 @@ const DATA = {
   ],
   static: [
     I('04-08-coin-strike-de', 'Coin Strike — DE'),
-    I('04-09-coin-strike-ch-fr', 'Coin Strike — CH (FR)'),
-    I('04-11-coin-strike-nl', 'Coin Strike — NL'),
-    I('04-12-coin-strike-fr', 'Coin Strike — FR'),
-    I('04-10-coin-strike-ch-de', 'Coin Strike — CH (DE)'),
-    I('04-01-big-bass-uk-1', 'Big Bass — UK'),
     I('04-02-big-bass-uk-2', 'Big Bass — UK'),
-    I('04-03-big-bass-uk-3', 'Big Bass — UK'),
-    I('04-04-fire-joker-pl-1', 'Fire Joker — PL'),
-    I('04-05-fire-joker-pl-2', 'Fire Joker — PL'),
-    I('04-06-joker-stoker-pl-1x1', 'Joker Stoker — PL'),
     I('04-07-joker-stoker-pl-9x16', 'Joker Stoker — PL', '9/16'),
+    I('04-11-coin-strike-nl', 'Coin Strike — NL'),
+    I('04-04-fire-joker-pl-1', 'Fire Joker — PL'),
     I('04-13-ringo-spin', 'Ringo Spin', '1527/900'),
   ],
 };
 
 // how each work was made: ai = generated, hand = built in AE / PS, hybrid = generated footage finished by hand
 const CRAFT = {
-  '01-01-sion-promo': 'hybrid', '01-03-ai-companion-charlie': 'hybrid', '01-06-feenko-app': 'hybrid',
+  'showreel': 'hand', '01-01-sion-promo': 'hybrid', '01-03-ai-companion-charlie': 'hybrid', '01-06-feenko-app': 'hybrid',
   '01-04-ai-companion': 'hybrid', '01-05-ai-companion-face-to-face': 'hand',
   '01-10-bigbetty-diner': 'hand', '01-11-bigbetty-auction': 'hand',
   '01-12-bigbetty-poster-diner': 'hand', '01-13-bigbetty-poster-auction': 'hand',
@@ -560,7 +554,7 @@ document.querySelectorAll('[data-list]').forEach(box => DATA[box.dataset.list].f
 document.querySelectorAll('.concept img').forEach(img => img.addEventListener('click', () => openLB(`<img src="${img.getAttribute('src')}" alt="${img.alt}">`)));
 
 const hero = document.querySelector('.hero-reel'), heroVideo = hero.querySelector('video');
-hero.addEventListener('click', () => { heroVideo.pause(); playVideo('showreel'); });
+hero.addEventListener('click', () => { heroVideo.pause(); playVideo(hero.dataset.file); });
 </script>
 </body>
 </html>
